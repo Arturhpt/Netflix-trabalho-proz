@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LILFLIX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"defer></script>
+</head>
+<body>
+  <div class="loader" id="loader">
+     <div class="spinner"></div>
+     <p>Aguarde, carregando informações...</p>
+  </div>
+  <header class="header">
+    <div class="container header-conteudo">
+        <h1 class="logo" id="logo"><span style="color: #FF0000;">LILFLIX</span></h1>
+        <nav class="menu">
+            <a href="#"id="inicio">Inicio</a>
+            <a href="#"id="filmes">Filmes</a>
+            <a href="#"id="series">Série</a>
+            <button id="toggleTema" class="toggle-tema">🌙 Escuro</button>
+        </nav>
+    </div>
+  </header>
+    <main>
+        <sectionn class="pesquisar-section">
+            <div class="container pesquisa-conteudo">
+                <input type="text" id="campoPesquisa" placeholder="Pesquisar por filme">
+                <button class="pesquisa-button" id="botaoPesquisa">
+                    🔍
+                </button>
+            </div>
+            <div class="container filtros-conteudo">
+                <select id="filtroGenero">
+                    <option value="">Todos os Generos</option>
+                </select>
+                <select id="filtroAno">
+                    <option value="">Todos os anos</option>
+                </select>
+                <select id="filtroNota">
+                    <option value="">Qualquer nota</option>
+                    <option value="5">5+</option>
+                    <option value="6">6+</option>
+                    <option value="7">7+</option>
+                    <option value="8">8+</option>
+                </select>
+                <select id="filtroPais">
+                    <option value="">Todos os países</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="BR">Brasil</option>
+                    <option value="KR">Coreia do Sul</option>
+                    <option value="JP">Japão</option>
+                    <option value="ES">Espanha</option>
+                    <option value="FR">França</option>
+                    <option value="GB">Reino Unido</option>
+                </select>
+            </div>
+        </section>
+        <section class="exibirFilmes-section">
+            <div class="filmesGrid" id="filmesGrid"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desenvolvido por Artur, emmanuel, Davi, Samuel ©️ 2026</p>
+    </footer>
+</body>
+</html>
